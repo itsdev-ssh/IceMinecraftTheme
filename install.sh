@@ -50,7 +50,7 @@ installTheme(){
 
 installThemeQuestion(){
     while true; do
-        read -p "Are you sure that you want to install the theme [y/N]? " yn
+        read -p "Você deseja instalar o tema? [y/N]? " yn
         case $yn in
             [Yy]* ) installTheme; break;;
             [Nn]* ) exit;;
@@ -64,7 +64,7 @@ repair(){
 }
 
 restoreBackUp(){
-    echo "Restoring backup..."
+    echo "Fazendo Backup..."
     cd /var/www/
     tar -xvf IceMinecraftTheme.tar.gz
     rm IceMinecraftTheme.tar.gz
